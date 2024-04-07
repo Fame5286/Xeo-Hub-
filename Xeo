@@ -2,8 +2,6 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "Xeo Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 
-
-
 local Tab = Window:MakeTab({
     Name = "FARM",
     Icon = "rbxassetid://4483345998",
@@ -29,7 +27,6 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 
-----
 Tab:AddToggle({
     Name = "fight Bully",
     Default = false,
@@ -49,6 +46,7 @@ end
 })
 
 ----
+
 Tab:AddToggle({
     Name = "fight Teacher ",
     Default = false,
@@ -68,6 +66,7 @@ end
 })
 
 ----
+
 Tab:AddToggle({
     Name = "fight GymRat ",
     Default = false,
@@ -87,6 +86,7 @@ end
 })
 
 ----
+
 Tab:AddToggle({
     Name = "fight MafiaBoss ",
     Default = false,
@@ -106,6 +106,7 @@ end
 })
 
 ----
+
 Tab:AddToggle({
     Name = "fight Champion ",
     Default = false,
@@ -249,55 +250,6 @@ end
 })
 
 ----
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 OrionLib:Init()
