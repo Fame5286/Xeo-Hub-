@@ -22,7 +22,7 @@ end
 ----
 
 local Tab = Window:MakeTab({
-    Name = "fight",
+    Name = "Fight",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
