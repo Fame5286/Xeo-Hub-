@@ -2,6 +2,8 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "Xeo Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 
+
+
 local Tab = Window:MakeTab({
     Name = "FARM",
     Icon = "rbxassetid://4483345998",
@@ -26,6 +28,22 @@ local Tab = Window:MakeTab({
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
+
+----
+
+Tab:AddToggle({
+    Name = "Auto Click Fight",
+    Default = false,
+    Callback = function(Value)
+_G. fight = Value 
+while _G. fight do wait ()
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ArmWrestleService"):WaitForChild("RE"):WaitForChild("onClickRequest"):FireServer()
+
+   end
+end
+})
+
+----
 
 Tab:AddToggle({
     Name = "fight Bully",
@@ -150,6 +168,7 @@ end
 })
 
 ----
+
 Tab:AddToggle({
     Name = "TELEPORT TO Event",
     Default = false,
@@ -212,6 +231,7 @@ end
 })
 
 ----
+
 Tab:AddToggle({
     Name = "SPIN 125WIN",
     Default = false,
@@ -250,6 +270,8 @@ end
 })
 
 ----
+
+
 
 
 OrionLib:Init()
